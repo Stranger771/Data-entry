@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#pendingArrivals,
+#arrivedEntries {
+  margin-top: 20px;
+}
+
+.entry {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchContainer {
+  border: 1px solid #dedfe0;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  margin-bottom: 40px;
+}
+#search {
+  text-align: center;
+  transform: translateX(-50%);
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 20px;
+  position: relative;
+  left: 50%;
+}
+.managing-arrivals {
+  position: relative;
+}
+.managing-arrivals-styles {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+}
+
+.updateEntry {
+  width: 110%;
+}

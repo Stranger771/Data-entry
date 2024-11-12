@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arrival Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Event Arrival Management</h1>
+
+    <form id="entryForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name..." required />
+
+      <label for="tickNum">Ticket Number:</label>
+      <input
+        type="text"
+        id="tickNum"
+        name="number"
+        placeholder="Ticket Number..."
+        required
+      />
+
+      <label for="payment">Mode Of Payment:</label>
+      <select id="payment" name="payment" required>
+        <option value="">Select Payment Mode</option>
+        <option value="byHand">By Hand</option>
+        <option value="sadapay">Sadapay</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+    <input id="search" type="text" placeholder="Search by Ticket Number..." />
+    <div class="searchContainer"></div>
+    <label for="viewSide"><strong> View Side by Side: </strong></label>
+    <input id="viewSide" type="checkbox" />
+    <div class="managing-arrivals">
+      <div>
+        <h2>Pending Arrivals</h2>
+        <div id="pendingArrivals"></div>
+      </div>
+
+      <div>
+        <h2>Arrived</h2>
+        <div id="arrivedEntries"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
